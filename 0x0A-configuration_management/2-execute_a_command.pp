@@ -1,7 +1,5 @@
 # 2-execute_a_command.pp
 
-exec { 'kill_killmenow':
-  command     => 'pkill -f killmenow',
-  refreshonly => true,
-  onlyif      => 'pgrep -f killmenow',
+exec { 'pkill -f killmenow':
+  path => '/usr/bin/:/usr/local/bin/:/bin/'
 }
