@@ -1,0 +1,10 @@
+# This is the ssh client system-wide configuration file.
+# This file provides defaults for users, and the values can be 
+# changed in per-user configuration files or on the command line.
+
+Host *
+    HostName 192.168.1.114
+    User school
+    IdentityFile ~/.ssh/school
+    PreferredAuthentications publickey
+    PasswordAuthentication no
