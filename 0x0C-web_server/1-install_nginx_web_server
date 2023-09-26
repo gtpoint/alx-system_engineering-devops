@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs Nginx with the following configurations:
 #+    Listens on port 80.
-#+    Returns a page containing "Holberton School" when queried
+#+    Returns a page containing "Hello World!" when queried
 #++    at the root with a curl GET request.
 
 apt-get update
