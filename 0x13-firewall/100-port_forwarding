@@ -1,8 +1,12 @@
+#
+# rules.before
+#
 # Rules that should be run before the ufw command line added rules. Custom
 # rules should be added to one of these chains:
 #   ufw-before-input
 #   ufw-before-output
 #   ufw-before-forward
+#
 
 *nat
 :PREROUTING ACCEPT [0:0]
